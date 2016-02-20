@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-<h1 class = "page-header">Projects<h1>
+<h1 class="page-header"> Past Projects<h1>
