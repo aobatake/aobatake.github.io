@@ -16,3 +16,6 @@ github_username:  aobatake
 
 # Build settings
 markdown: kramdown
+
+sass:
+sass_dir: _sass
