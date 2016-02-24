@@ -2,5 +2,8 @@
 	background-image: url("../css/wall.png");
 	background-size: cover;
 	color: white;
-	padding:0;
+}
+
+.current-page{
+
 }

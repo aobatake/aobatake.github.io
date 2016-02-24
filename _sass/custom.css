@@ -1,9 +1,0 @@
-.img_jumbo {
-	padding-top:    $jumbotron-padding;
-  	padding-bottom: $jumbotron-padding;
-  	margin-bottom: $jumbotron-padding;
-  	color: $jumbotron-color;
-	background-image: url("s/assets/eng.jpg");
-	background-size: cover;
-
-}
