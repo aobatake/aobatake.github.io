@@ -1,13 +1,16 @@
-/* ========================================================================
- * Bootstrap: affix.js v3.3.6
- * http://getbootstrap.com/javascript/#affix
- * ========================================================================
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- * ======================================================================== */
+---
+---
+
+// ========================================================================
+// * Bootstrap: affix.js v3.3.6
+// * http://getbootstrap.com/javascript/#affix
+// * ========================================================================
+// * Copyright 2011-2015 Twitter, Inc.
+// * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+// * ======================================================================== 
 
 
-+function ($) {
+function ($) {
   'use strict';
 
   // AFFIX CLASS DEFINITION

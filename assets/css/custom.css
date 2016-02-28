@@ -1,9 +1,57 @@
+
+
+
+.main-background {
+	background-image: url("../patterns/geometric2x.png");
+	background-repeat:repeat;
+}
+
 .img_jumbo {
-	background-image: url("../css/wall.png");
+	background-image: url("../pics/wall.png");
 	background-size: cover;
-	color: white;
+	color:white;
+	opacity:0.85;
+	padding:75px;
 }
 
-.current-page{
-
+.jumbo-header{
+	border-radius: 5px;
+	background-color:rgba(60,60,60,0.85);
+	color:white;
 }
+
+.jumbo-body{
+	padding:10px;
+	border-radius: 5px;
+	background-color: rgba(60,60,60,0.75);
+	color:white;
+}
+
+.page-header{
+	border-radius: 5px;
+	background-color:#3c3c3c;
+	color:#9A9A9A;
+	opacity:0.9;
+}
+
+.page-body{
+	padding:10px;
+	background-color: #3c3c3c;
+	border-radius: 5px;
+	color:#9A9A9A;	
+}
+
+.footer{
+	background-color: #3c3c3c;
+	color:#9A9A9A;
+}
+
+.footer-set{
+	padding-top: 10px;
+	color:#9A9A9A;
+}
+
+
+
+
+
