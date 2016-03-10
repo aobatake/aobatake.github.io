@@ -7,3 +7,10 @@
 .Site-content {
   flex: 1;
 }
+
+
+.flex-container{	
+	display: flex;
+	flex-flow:column;
+	justify-content:center;
+}
