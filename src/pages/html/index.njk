@@ -4,19 +4,53 @@
 
 <body>
 
-	<main class="Site dark">
-      <div class="Site-content dark-sub">
+	<main class="dark">
+      <div class="dark-sub">
       	<div class="header-container">
-      		<h1 class="home-header">Andrew Obatake</h1>
-      		<h4 class="sub-header">Computer Enginnering</h4>
-      		<h4 class="sub-header">Hawaii</h4>
-      	</div>
-      </div>
-      
-     <div class="nav-home">
-      {% include "nav.njk" %}
-     </div>
-	</main>
+         
+          <div class="header">
+      		  <h1 class="home-header">Andrew Obatake</h1>
+      		  <h4 class="sub-header">Computer Enginnering</h4>
+      		  <h4 class="sub-header">Hawaii</h4>
+      	   </div>
+
+           <div class="social">
+            <a href="https://github.com/aobatake">{% include "github.njk" %}</a>
+            <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106">{% include "linkedin.njk" %}</a>
+           </div>
+        </div>
+
+        <div class="body-container">
+  
+          <div class="inner-container">
+
+          <div class="icon-container">
+            <button class="icon">
+              <a href="/about.html">
+              {% include "about-icon.njk" %}
+              </a>
+              <p>About Me</p>
+            </button>
+           
+           <button class="icon">  
+            <a href="/projects.html">
+                {% include "project-icon.njk" %}
+            </a>
+            <p>Projects</p>
+           </button>
+          
+            <button class="icon">
+              <a href="/blog.html">
+                {% include "blog-icon.njk" %}
+              </a>
+              <p>Blog</p>
+            </button>
+          </div>
+
+          </div>
+        </div>
+    </div>
+  </main>
 </body>	
 
 
