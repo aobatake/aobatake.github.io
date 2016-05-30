@@ -24,28 +24,25 @@
   
           <div class="inner-container">
 
-          <div class="icon-container">
-            <button class="icon">
-              <a href="/about.html">
-              {% include "about-icon.njk" %}
-              </a>
-              <p>About Me</p>
-            </button>
-           
-           <button class="icon">  
-            <a href="/projects.html">
-                {% include "project-icon.njk" %}
-            </a>
-            <p>Projects</p>
-           </button>
+            <div class="icon-container">
           
-            <button class="icon">
-              <a href="/blog.html">
-                {% include "blog-icon.njk" %}
+              <a href="/about.html" class="icon button">
+                {% include "about-icon.njk" %}
+                <p>About Me</p>
               </a>
-              <p>Blog</p>
-            </button>
-          </div>
+
+              <a href="/projects.html" class="icon button" >
+                  {% include "project-icon.njk" %}
+                  <p>Projects</p>
+              </a>
+        
+    
+
+              <a href="/blog.html" class="icon button">
+                {% include "blog-icon.njk" %}
+                <p>Blog</p>
+              </a>
+            </div>
 
           </div>
         </div>
