@@ -1,56 +1,43 @@
+<!--HomePage-->
 {% extends "layout.njk" %}
-
 {% block content %}
-
 <body>
-
 	<main class="dark">
-      <div class="dark-sub">
-      	<div class="header-container">
-         
-          <div class="header">
-      		  <h1 class="home-header">Andrew Obatake</h1>
-      		  <h4 class="sub-header">Computer Enginnering</h4>
-      		  <h4 class="sub-header">Hawaii</h4>
-      	   </div>
-
-           <div class="social">
-            <a href="https://github.com/aobatake">{% include "github.njk" %}</a>
-            <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106">{% include "linkedin.njk" %}</a>
-           </div>
-        </div>
-
+    <div class="dark-sub">
+      <div class="main-container">  
         <div class="body-container">
-  
           <div class="inner-container">
-
-            <div class="icon-container">
-          
-              <a href="/about.html" class="icon button">
-                {% include "about-icon.njk" %}
-                <p>About Me</p>
-              </a>
-
-              <a href="/projects.html" class="icon button" >
+            <div class="border-container">                 
+              <div class="body-header">
+                <div>
+                  <h1>Andrew Obatake</h1>
+                  <h2>Computer Engineering</h2>
+                  <h2>Hawaii</h2>
+                </div> <!--body-header-->
+                <div class="social-container">
+                  <a href="https://github.com/aobatake">{% include "github.njk" %}</a>
+                  <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106">{% include "linkedin.njk" %}</a>
+                </div>
+              </div> <!--social-container-->
+              <div class="button-container">         
+                <a href="/about.html" class="icon button">
+                  {% include "about-icon.njk" %}
+                  <p>About Me</p>
+                </a>
+                <a href="/projects.html" class="icon button" >
                   {% include "project-icon.njk" %}
                   <p>Projects</p>
-              </a>
-        
-    
-
-              <a href="/blog.html" class="icon button">
-                {% include "blog-icon.njk" %}
-                <p>Blog</p>
-              </a>
-            </div>
-
-          </div>
-        </div>
-    </div>
+                </a>
+                <a href="/blog.html" class="icon button">
+                  {% include "blog-icon.njk" %}
+                  <p>Blog</p>
+                </a>
+              </div> <!--button-container-->
+            </div> <!--border-continer-->
+          </div> <!--inner-container-->
+        </div> <!--body-container-->
+      </div> <!--main-container-->
+    </div> <!--dark-container-->
   </main>
 </body>	
-
-
-
-
 {% endblock %}

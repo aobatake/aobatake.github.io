@@ -3,12 +3,7 @@
   height: 20vh;
 }
 
-.header{
-  width:70vw;
-}
-
-.social{
-  width:25vw;
+.social-container{
   display:flex;
   flex-direction: column;
   align-items: flex-end;
@@ -17,8 +12,8 @@
 
 .social-icon{
   fill:white;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   &:hover{
     fill:$accent-color;
   }
@@ -34,31 +29,49 @@
   }
 }
 
-.home-header{
-	margin:0;
-}
-
-.sub-header{
-	margin:0;
-}
-
-.body-container{
+.main-container{
   display:flex;
   justify-content: center;
   color:white;
-  height:60vh;
+  height:80vh;
+}
+
+.body-container{
+  margin-top:15vh;
 }
 
 .inner-container{
-  margin-top: 10vh;
-  width:70vmax;
+  background-color:rgba(0,0,0,0.5);
+  height:60vh;
+  width:1000px;
+  border-radius:10px;
+  padding: 5px 10px 5px 10px;
+  display: flex;
 }
 
+.border-container{
+  border:1px solid white;
+  border-radius:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
 
-.icon-container{
-  height:35vh;
+.body-header{
+  font-family: $fancy-font;
+  padding:20px 45px 10px 45px;
+  margin:20px;
+  background-color: rgba(27,94,32,0.7);
+  border:3px black solid;
+  border-radius:10px;
   display:flex;
-  flex-flow:row,wrap;
+  justify-content: space-between;
+}
+
+.button-container{
+  height:20vh;
+  display:flex;
   justify-content: space-around;
   align-items:flex-end;
 }
@@ -66,35 +79,35 @@
 .icon{
   color: white;
   padding-top: 15px;
-  background-color: rgba(27,94,32,0);
+  background-color: rgba(27,94,32,0.7);
+  border:3px black solid;
   border-radius:10px;
   width:175px;
   height:125px;
   margin-bottom:2.5vh;
+  font-family: $fancy-font;
   
 
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items:center; 
-  
+
   @media screen and (max-width: 600px) {
     width:75px;
     height:75px;
   }
-}
 
-.icon {
-  border:none;
-  &:hover{
-    box-shadow: 2px 2px 0px 3px black;
-    background-color:rgba(46,125,50,0.0);
+   &:hover{
+    border: 3px solid white;
+    background-color:rgba(27,94,32,0.5);
     color:$accent-color;
     .home-icon{
     fill:$accent-color;
     }
   }
 }
+
 
 .about-text{
   margin:0;
