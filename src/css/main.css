@@ -684,7 +684,7 @@ nav {
         color: white;
         text-decoration: none; }
         nav ul li a:hover {
-          color: #00C853; }
+          color: #d9534f; }
 
 @media screen and (max-width: 600px) {
   .mobile-nav-trigger {
@@ -774,7 +774,7 @@ h1, h2, h3, h4, h5, button, p {
   width: 32px;
   height: 32px; }
   .social-icon:hover {
-    fill: #00C853; }
+    fill: #d9534f; }
 
 .home-icon {
   width: 48px;
@@ -799,11 +799,11 @@ h1, h2, h3, h4, h5, button, p {
   height: 60vh;
   width: 1000px;
   border-radius: 10px;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 10px 10px 10px;
   display: flex; }
 
 .border-container {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -814,7 +814,7 @@ h1, h2, h3, h4, h5, button, p {
   font-family: "Neucha", cursive;
   padding: 20px 45px 10px 45px;
   margin: 20px;
-  background-color: rgba(27, 94, 32, 0.7);
+  background-color: rgba(0, 135, 68, 0.7);
   border: 3px black solid;
   border-radius: 10px;
   display: flex;
@@ -829,7 +829,7 @@ h1, h2, h3, h4, h5, button, p {
 .icon {
   color: white;
   padding-top: 15px;
-  background-color: rgba(27, 94, 32, 0.7);
+  background-color: rgba(0, 135, 68, 0.7);
   border: 3px black solid;
   border-radius: 10px;
   width: 175px;
@@ -847,9 +847,9 @@ h1, h2, h3, h4, h5, button, p {
   .icon:hover {
     border: 3px solid white;
     background-color: rgba(27, 94, 32, 0.5);
-    color: #00C853; }
+    color: #d9534f; }
     .icon:hover .home-icon {
-      fill: #00C853; }
+      fill: #d9534f; }
 
 .about-text {
   margin: 0;

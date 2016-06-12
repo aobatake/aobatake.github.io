@@ -3,32 +3,33 @@
 {% block content %}
 <body>
 	<main class="dark">
-    <div class="dark-sub">
-      <div class="main-container">  
-        <div class="body-container">
-          <div class="inner-container">
-            <div class="border-container">                 
-              <div class="body-header">
+    <div class="dark-container">
+      <div class="hmain-container">  
+        <div class="hbody-container">
+          <div class="hinner-container">
+            <div class="hborder-container">                 
+              <div class="hbody-header">
                 <div>
                   <h1>Andrew Obatake</h1>
                   <h2>Computer Engineering</h2>
                   <h2>Hawaii</h2>
                 </div> <!--body-header-->
-                <div class="social-container">
+                <div class="hsocial-container">
                   <a href="https://github.com/aobatake">{% include "github.njk" %}</a>
                   <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106">{% include "linkedin.njk" %}</a>
+                  <a href="mailto:aobatake@hawaii.rr.com">{% include "mail.njk" %}</a>
                 </div>
               </div> <!--social-container-->
-              <div class="button-container">         
-                <a href="/about.html" class="icon button">
+              <div class="hbutton-container">         
+                <a href="/about.html" class="hicon button">
                   {% include "about-icon.njk" %}
                   <p>About Me</p>
                 </a>
-                <a href="/projects.html" class="icon button" >
+                <a href="/projects.html" class="hicon button" >
                   {% include "project-icon.njk" %}
                   <p>Projects</p>
                 </a>
-                <a href="/blog.html" class="icon button">
+                <a href="/blog.html" class="hicon button">
                   {% include "blog-icon.njk" %}
                   <p>Blog</p>
                 </a>

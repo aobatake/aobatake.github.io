@@ -1,0 +1,15 @@
+.footer-container{
+	padding-bottom:5px;
+	display:flex;
+	justify-content:center;
+}
+
+.foot-icon{
+	padding-right:20px;
+	fill:white;
+	width:28px;
+	height:28px;
+	&:hover{
+		fill:$accent-color;
+	}
+}

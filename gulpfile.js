@@ -30,17 +30,6 @@ var cssnano = require('cssnano');
 gulp.task('default', ['serve','image']);
 
 
-//Post Process CSS
-gulp.task('css', function () {
-    var processors = [
-        autoprefixer({browsers: ['last 1 version']}),
-        cssnano(),
-    ];
-    return gulp.src('src/css/*.css')
-        .pipe(postcss(processors))
-        .pipe(gulp.dest('./dist/css'));
-});
-
 //Deploy to gh-pages
 gulp.task('deploy', function(){
 	return gulp.src("./dist/**/*")
@@ -48,13 +37,13 @@ gulp.task('deploy', function(){
 });
 
 //Does all processes and serves from dist + watches
-gulp.task('serve',['sass','html','js','css'], function(){
+gulp.task('serve',['sass','html','js'], function(){
 	browserSync.init({
 		server:{
 			baseDir: "./dist"
 		}
 	});
-	gulp.watch("src/sass/**/*.scss",['sass','css']);
+	gulp.watch("src/sass/**/*.scss",['sass']);
 	gulp.watch('src/pages/**/*.njk', ['html']);
 	gulp.watch('src/js/*',['js']);
 	gulp.watch('src/images/*'['images']);
@@ -65,19 +54,24 @@ gulp.task('serve',['sass','html','js','css'], function(){
 gulp.task('html', function(){
 	return gulp.src('src/pages/html/*.njk')
 		.pipe(nunjucksRender ({
-			path:['src/pages/njk']
+			path:['src/pages/njk','src/pages/njk/svg' ]
 		}))
 		.on('error', errorDelete)
 		.pipe(gulp.dest('dist/'))
 		.pipe(reload({stream: true}));
 });
 
-//converts sass to css
+//converts sass to css and post process css
 gulp.task('sass' , function(){
+	var processors = [
+        autoprefixer({browsers: ['last 1 version']}),
+        cssnano(),
+    ];
 	return gulp.src("src/sass/main.scss")
     	.pipe(sass())
     	.on('error',errorDelete)
-    	.pipe(gulp.dest("src/css"))
+    	.pipe(postcss(processors))
+    	.pipe(gulp.dest("dist/css"))
     	.pipe(reload({stream: true}));
 
 });
