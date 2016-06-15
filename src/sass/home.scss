@@ -1,0 +1,125 @@
+.hhome-container{
+  @extend .header-container;
+  height: 20vh;
+}
+
+.hsocial-container{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.social-icon{
+  fill:white;
+  width: 32px;
+  height: 32px;
+  &:hover{
+    fill:$accent-color;
+  }
+}
+
+.home-icon{
+  width: 48px;
+  height: 48px;
+  fill:white;
+  @media screen and (max-width: 600px) {
+  width: 32px;
+  height: 32px;  
+  }
+}
+
+.hmain-container{
+  display:flex;
+  justify-content: center;
+  color:white;
+  height:90vh;
+  margin:15px 0 15px 0;
+}
+
+
+.hinner-container{
+  background-color:rgba(0,0,0,0.5);
+  height:100%;
+  width:1300px;
+  border:2px white solid;
+  border-radius:10px;
+  padding: 10px 10px 10px 10px;
+  display:flex;
+  flex-direction:column;
+}
+
+.middle-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.photo-container{
+  width:250px;
+  height:250px;
+  border-radius:10px;
+  color:white;
+  font-family:$fancy-font;
+  font-size:6rem;
+  background-color:$text-background;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.personal-photo{
+  width:225px;
+  height:225px;
+
+  margin:0 30px 0 30px;
+}
+
+.text-container{
+  padding:15px;
+  width:800px;
+  margin:0 50px 0 50px;
+  border-radius:10px;
+  background-color:$text-background;
+  color:white;
+  font-family:$normal-font;
+  font-size:1.7rem;
+}
+
+.hbody-header{
+  font-family: $fancy-font;
+  padding:20px 45px 10px 45px;
+  margin:20px;
+  background-color: $home;
+  border-radius:10px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.hbutton-container{
+  height:20vh;
+  display:flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+
+.icon-home{
+  @extend .icon;
+  border:2px white solid;
+  background-color: $home;
+  margin:0 50px 0 50px;
+  &:hover{
+    border: none;
+    background-color:$home-hover;
+    color:$accent-color;
+    .home-icon{
+    fill:$accent-color;
+    }
+  }
+}
+
+
+
+
+

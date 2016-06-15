@@ -1,0 +1,48 @@
+<!--HomePage-->
+{% extends "layout.njk" %}
+{% block content %}
+<body>
+	<main class="dark">
+    <div class="dark-container">
+      <div class="hmain-container">  
+        <div class="hbody-container">
+          <div class="hinner-container">        
+              <div class="hbody-header">
+                <div>
+                  <h2>Andrew Obatake</h2>
+                  <h3>Computer Engineering</h3>
+                  <h3>Hawaii</h3>
+                </div>
+                <div class="hsocial-container">
+                  <a href="https://github.com/aobatake">{% include "github.njk" %}</a>
+                  <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106">{% include "linkedin.njk" %}</a>
+                  <a href="mailto:aobatake@hawaii.rr.com">{% include "mail.njk" %}</a>
+                </div>  <!--social-container-->
+              </div> <!--body-header-->
+              <div class="middle-container">
+                <div class="photo-container">
+                  <img class="personal-photo" src="./images/personal.jpg">
+                </div>
+                <div class="text-container">
+                  <h1>Aloha!</h1>
+                  <p>If you didn't know already, my name is Andrew Obatake. I was born and raised in Hawaii on the island of Oahu. I am currently a undergraduate student studying computer engineering at the University of Hawaii at Manoa. </p>
+                  <p>Through college I found an interest in coding and later found web development/coding to be intriguing. This is the first iteration of my website and hope to improve it as I learn more. Thanks for visiting!</p>
+                </div>
+              </div>
+              <div class="hbutton-container">         
+                <a href="/projects.html" class="icon-home button" >
+                  {% include "project-icon.njk" %}
+                  <p>Projects</p>
+                </a>
+                <a href="/blog.html" class="icon-home button">
+                  {% include "blog-icon.njk" %}
+                  <p>Blog</p>
+                </a>
+              </div> <!--button-container-->
+          </div> <!--inner-container-->
+        </div> <!--body-container-->
+      </div> <!--main-container-->
+    </div> <!--dark-container-->
+  </main>
+</body>	
+{% endblock %}
