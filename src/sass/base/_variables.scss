@@ -19,11 +19,18 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 //Color
 
 $nav-color:#00796B;
+<<<<<<< HEAD
 $accent-color:#FFAB00;
 
 $home:rgba(0,135,68,0.7);
 $home-hover:rgba(0,135,68,0.7);
 $text-background:rgba(0,135,68,0.9);
+=======
+$accent-color:#ffa700;
+
+$home:rgba(0,135,68,0.7);
+$home-hover: rgba(0,135,68,0.5);
+>>>>>>> 55e208930bb5f13bf35666c0ad7394dbc66d9268
 
 $light-grey: #e1e1e1 !default;
 $dark-grey: #333 !default;
