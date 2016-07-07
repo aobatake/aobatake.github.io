@@ -28,26 +28,24 @@ const exp = {
 };
 
 const kaleo = [
-	'<li>Facilitated a redesign of mobile app and website</li>',
-	'<li>Did something</li>'
+	'<li>Responsible for the upkeep and maintenance of the Board of Publications online components.</li>',
+	'<li>Helped facilitate a redesign of both website and mobile app</li>'
 ];
 
 const scel = [
-	'<li>Weatherbox</li>',
-	'<li>Mentorship</li>'
+	'<li>Created firmware that used a microcontroller to read sensor values and send them over wireless connection</li>',
+	'<li>Mentored high school interns to create a smart plug</li>'
 ];
 
 const drone = [
-	'<li>Camera</li>',
-	'<li>Stuff</li>'
+	'<li>Created a workflow process to capture, transfer and display photos</li>',
 ];
 
 const ieee = [
-	'<li>Camera</li>',
-	'<li>Stuff</li>'
+	'<li>Executive Board: Events Coordinator</li>',
 ];
 
 const sab = [
-	'<li>Camera</li>',
-	'<li>Stuff</li>'
+	'<li>Professional Fees Officer</li>',
+	
 ];
