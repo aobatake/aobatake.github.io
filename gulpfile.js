@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var babel = require('gulp-babel');
 
 //html
 var nunjucksRender = require('gulp-nunjucks-render');
@@ -90,6 +91,9 @@ gulp.task('image', function(){
 gulp.task('js', function(){
 	return gulp.src('src/js/*.js')
 		.pipe(concat('main.js'))
+		.pipe(babel({
+			presets: ['es2015']
+		}))
 		.pipe(uglify())
 		.on('error', errorDelete)
 		.pipe(gulp.dest('dist/js'))

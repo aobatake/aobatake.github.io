@@ -4,26 +4,29 @@
 
 <body>
 
-	<main class="dark">
+	<main class="section-main">
 	  	{% include "nav.njk" %}
-  	<div class="dark-container">
-  		<div class="abody-container">
-  			<div class="photo-container">
-  				<p>Andrew</p>
-  				<img class="personal-photo" src="./images/personal.jpg">
-  				<p>Obatake</p>
-    		</div>
-    		<div class="text-container">
-    			<h1>Aloha!</h1>
-    			<p>If you didn't know already, my name is Andrew Obatake. I was born and raised in Hawaii on the island of Oahu. I am currently a undergraduate student studying computer engineering at the University of Hawaii at Manoa. </p>
-    			<p>Through college I found an interest in coding and later found web development/coding to be intriguing. This is the first iteration of my website and hope to improve it as I learn more. Thanks for visiting!</p>
-    		</div>
-    	</div>
+  	<div class="section-body container">
+      <h1 class="row header-masthead"></h1>
+  		<div class="row">
+        <div class="one-third column">
+          <img class="personal-photo" src="images/personal.jpg">
+          <div class="button-container">    
+            <a class="about-button">About</a>
+            <a class="experience-button">Experience</a>
+            <a class="resume-button">Resume</a>
+          </div>
+        </div>
+        <div class="two-thirds column">
+          <div class="section-body-about">
+          </div>  
+        </div>
+      </div>
     </div>   
   {% include "footer.njk" %}
+
   </main>
-
-
+  <script  type="text/javascript" src="js/main.js"></script> 
 </body>	
 
 {% endblock %}
