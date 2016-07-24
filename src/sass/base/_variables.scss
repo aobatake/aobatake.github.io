@@ -12,7 +12,10 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 //Color
 
 $nav-color:white;
-$accent-color:lighten(#66bb6a, 13%);
+$accent-color:#86a9ca;
+$panel-color:#86a9ca;
+$black:#2e3138 ;
+$background-color:#6b717e;
 
 $light-grey: #e1e1e1 !default;
 $dark-grey: #333 !default;
@@ -24,8 +27,8 @@ $font-color: #222 !default;
 
 // Typography
 //$font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family:"Muli", sans-serif;
-$font-header:"Play", sans-serif;
+$font-family: 'Work Sans', sans-serif;
+$font-header: 'Rubik', sans-serif;
 
 
 //Grid Variables

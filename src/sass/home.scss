@@ -15,7 +15,7 @@
 
 .header-jumbotron{
   padding:4rem;
-  font-family:$font-header;
+  font-family:$font-family;
 }
 
 .link-list{
@@ -28,48 +28,49 @@
 
 .panel{
   @extend .dark;
-  color:rgba(255,255,255,1);
+  color:rgba(255,255,255,0.6);
   border:none;
   height:100%;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center; 
-  font-family:$font-header;
-  &:after{
+  font-family:$font-family;
+  text-transform:uppercase;
+  &:after {
     background-color:rgba(0,0,0,0.4);
   }
 
-  &:hover{
-    color:#66BB6A;
+  &:hover {
+    color:rgba(255,255,255,1);
     .home-icon {
-      fill:#66BB6A;
+      fill:rgba(255,255,255,1);
     }
     &:after{
-      background-color:rgba(0,0,0,0.1);
+      background-color:rgba(0,0,0,0.25);
     }
   }
 }
 
 .panel-about{
   @extend .panel;
-    background:#ba4b6a;
+    background:$panel-color;
 }
 
 .panel-project{
   @extend .panel;
-    background:#546c8e;
+    background:$panel-color;
 }
 
 .panel-blog{
   @extend .panel; 
-    background:#ba4b6a;
+    background:$panel-color;
 }
 
 .home-icon{
-  width:9rem;
-  height:9rem;
-  fill:rgba(255,255,255,1);
+  width:8.5rem;
+  height:8.5rem;
+  fill:rgba(255,255,255,0.7);
 }
 
 .social-icon{
