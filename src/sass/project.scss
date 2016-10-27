@@ -1,0 +1,44 @@
+
+
+.project-about {
+  background-color: $background-color;
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+.project-panel {
+  color: #000000;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 2rem;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.project-image-scel {
+  width: 200px;
+  height: 200px;
+}
+
+.project-image-uhdt {
+  width: 350px;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+.project-para {
+  padding-top: 2rem;
+  text-align: justify;
+}

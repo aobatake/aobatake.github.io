@@ -1,12 +1,12 @@
 .section-main{
-	background:$background-color;
-	display:flex;
-	min-height: 100vh;
+	background: url('../images/moon_pattern.png');
+	display: flex;
+	height: 100vh;
 	flex-direction:column;
 }
 
 .section-body {
-	background:$black;
+	background: $black;
 	color:white;
 	border-radius:5px;
 	flex:1;
@@ -22,6 +22,7 @@
 	}
 }
 
+//Not being used
 .header-masthead{
 	margin-bottom:2rem;
 	background-image:url('../images/masthead.jpg');
@@ -64,11 +65,11 @@
 }
 
 .header-exp{
-	margin-bottom:1rem;
+	margin-bottom: 1rem;
 }
 
 .button-container{
-	padding:2rem 0;
+	padding: 1rem 0 0 0;
 
 }
 

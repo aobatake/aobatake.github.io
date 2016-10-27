@@ -3,26 +3,24 @@
 {% block content %}
 
 <body>
-
-	<main class="section-main">
-	  	{% include "nav.njk" %}
-  	<div class="section-body container">
-      <h1 class="row header-masthead"></h1>
-  		<div class="row">
-        <div class="one-third column">
-          <img class="personal-photo" src="images/personal.jpg">
-          <div class="button-container">    
-            <a class="about-button">About</a>
-            <a class="experience-button">Experience</a>
-            <a class="resume-button">Resume</a>
+    <main class="section-main">
+        {% include "nav.njk" %}
+      <div class="section-body">
+        <div class="row container">
+          <div class="one-third column">
+            <img class="personal-photo" src="images/personal.jpg">
+            <div class="button-container">
+              <a class="about-button">About</a>
+              <a class="experience-button">Experience</a>
+              <a class="resume-button" href="../assets/resume.pdf">Resume</a>
+            </div>
+          </div>
+          <div class="two-thirds column">
+            <div class="section-body-about">
+            </div>
           </div>
         </div>
-        <div class="two-thirds column">
-          <div class="section-body-about">
-          </div>  
-        </div>
       </div>
-    </div>   
   {% include "footer.njk" %}
 
   </main>

@@ -6,10 +6,26 @@
 	<main class="section-main">
 	{% include "nav.njk" %}
 		<div class="section-body">
-
+      <div class="one-half column project-panel">
+          <img class="project-image-scel" src="./images/scel.png">
+          <a href="http://scel-hawaii.org"><h4>Smart Campus Energy Lab</h4></a>
+          <p class="project-para">The Smart Campus Energy Lab is led by Dr. Anthony Kuh, a professor of Electrical Engineering at the University of Hawaii at Manoa.</p>
+          <p class="project-para">The goal of the Smart Campus Energy Lab is to support efforts in creating new technologies, techniques and products related to sustainability or renewable energy. We are primarily a student-led lab that strives to achieve this by promoting teamwork, communication, and lifelong learning.
+          </p>      
+      </div>
+      <div class="one-half column project-panel">
+        <img class="project-image-uhdt" src="./images/uhdt.png">
+        <h4><a href="http://rip.eng.hawaii.edu/projects/university-of-hawaii-drone-technologies-2016-2017/">University of Hawaii <br> Drone Tech</a></h4>
+        <p class="project-para">University of Hawaii Drone Technologies (UHDT) is a Vertically Integrated Project (VIP) that will participate in the Student Unmanned Aerial Systems Competition (SUAS) by the Association for Unmanned Vehicle Systems International (AUVSI). 
+        </p>
+        <p class="project-para">
+        This multidisciplinary team will design and integrate an unmanned aerial system (UAS) capable of autonomous flight and navigation, remote sensing, and the completion of specific tasks. Last year, UHDT VIP was the first team from Hawaii to ever participate in the competition.
+        </p>
+      </div>
 		</div>
 	{% include "footer.njk" %}
   </main>
+  <script  type="text/javascript" src="js/main.js"></script>
 </body>	
 
 {% endblock %}

@@ -40,21 +40,21 @@ nav {
     position: relative;
     	
     li {
-    	display: inline-block;
+        display: inline-block;
     	padding: 15px 30px;
     	font-size: 24px;
     	font-weight: 400;
     
     	
     	a {
-    		color: $nav-color;
+    		color: $black;
     		text-decoration: none;
             font-family:$font-header;
     		&:hover{
     			color:$accent-color;
     		}
-			}
 		}
+	}
   }
 }
 
@@ -71,7 +71,7 @@ nav {
 
     nav ul {
         position: absolute;
-        background-color:#ba4b6a;
+        background: url('../images/paper_pattern.png');
         width: 100%;
         top: 80px;
         width: 90%;
@@ -95,7 +95,7 @@ nav {
         border-bottom: 1px solid #e2e2e2;
     }
     nav ul li a {
-        color: $link-color;
+        color: $black;
         text-decoration: none;
     }
 }

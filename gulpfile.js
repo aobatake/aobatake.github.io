@@ -65,15 +65,15 @@ gulp.task('html', function(){
 //converts sass to css and post process css
 gulp.task('sass' , function(){
 	var processors = [
-        autoprefixer({browsers: ['last 1 version']}),
-        cssnano(),
-    ];
+		autoprefixer({browsers: ['last 1 version']}),
+		cssnano(),
+	];
 	return gulp.src("src/sass/main.scss")
-    	.pipe(sass())
-    	.on('error',errorDelete)
-    	.pipe(postcss(processors))
-    	.pipe(gulp.dest("dist/css"))
-    	.pipe(reload({stream: true}));
+		.pipe(sass())
+		.on('error',errorDelete)
+		.pipe(postcss(processors))
+		.pipe(gulp.dest("dist/css"))
+		.pipe(reload({stream: true}));
 
 });
 
