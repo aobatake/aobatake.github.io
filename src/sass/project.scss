@@ -12,12 +12,16 @@
   border-radius: 5px;
   background: #ffffff;
   padding: 2rem;
-  height: 70vh;
+  min-height: 70vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 4rem;
+  }
 
   a {
     text-decoration: none;
@@ -35,10 +39,16 @@
 .project-image-uhdt {
   width: 350px;
   height: 100px;
+
+  @media only screen and (max-width: 500px) {
+    width: 250px;
+    height: 75px;
+  }
+
   margin-bottom: 2rem;
 }
 
 .project-para {
   padding-top: 2rem;
-  text-align: justify;
+  text-align: left;
 }
